@@ -1,0 +1,30 @@
+{
+  "module": "Error Analysis",
+  "simulationTitle": "Error Propagation Visualization",
+  "parameters": [
+    {
+      "name": "Initial Error",
+      "type": "slider",
+      "min": 0.0,
+      "max": 0.5,
+      "default": 0.05,
+      "description": "Sets the starting error value for the simulation."
+    },
+    {
+      "name": "Iterations",
+      "type": "stepper",
+      "min": 1,
+      "max": 50,
+      "default": 10,
+      "description": "Number of steps to observe error growth."
+    },
+    {
+      "name": "Error Type",
+      "type": "segmented",
+      "options": ["Round-off", "Truncation"],
+      "default": "Round-off",
+      "description": "Type of error to simulate."
+    }
+  ],
+  "output": "Line chart showing error value over iterations"
+}

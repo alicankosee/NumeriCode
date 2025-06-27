@@ -1,0 +1,22 @@
+{
+  "module": "Performance Analysis",
+  "simulationTitle": "Algorithm Performance Comparison",
+  "parameters": [
+    {
+      "name": "Algorithm",
+      "type": "segmented",
+      "options": ["Gauss", "LU", "Jacobi"],
+      "default": "Gauss",
+      "description": "Algorithm to analyze."
+    },
+    {
+      "name": "Problem Size",
+      "type": "stepper",
+      "min": 2,
+      "max": 100,
+      "default": 10,
+      "description": "Size of the problem (e.g., matrix size)."
+    }
+  ],
+  "output": "Bar chart comparing computation time and memory usage"
+}

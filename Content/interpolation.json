@@ -1,0 +1,22 @@
+{
+  "module": "Interpolation",
+  "simulationTitle": "Interpolation of Data Points",
+  "parameters": [
+    {
+      "name": "Number of Points",
+      "type": "stepper",
+      "min": 2,
+      "max": 8,
+      "default": 4,
+      "description": "Number of data points to interpolate."
+    },
+    {
+      "name": "Method",
+      "type": "segmented",
+      "options": ["Linear", "Lagrange", "Newton"],
+      "default": "Linear",
+      "description": "Interpolation method."
+    }
+  ],
+  "output": "Graph showing original points and interpolated curve"
+}

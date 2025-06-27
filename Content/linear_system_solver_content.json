@@ -1,0 +1,106 @@
+{
+  "lesson": {
+    "title": "Linear System Solver",
+    "paragraphs": [
+      "A linear system consists of multiple linear equations involving the same set of variables.",
+      "Solving linear systems is fundamental in engineering, physics, and applied mathematics.",
+      "Common methods for solving linear systems include Gaussian elimination, Gauss-Jordan elimination, and matrix factorization.",
+      "Gaussian elimination transforms the system into an upper triangular form, making back substitution possible.",
+      "Gauss-Jordan elimination reduces the matrix further to row echelon form, directly yielding the solution.",
+      "Matrix factorization methods, such as LU decomposition, break the matrix into simpler components for efficient solving.",
+      "Iterative methods like Jacobi and Gauss-Seidel are used for large or sparse systems.",
+      "The choice of method depends on the size, sparsity, and properties of the coefficient matrix."
+    ],
+    "formula": "Ax = b"
+  },
+  "quiz": [
+    {
+      "question": "What is a linear system?",
+      "options": [
+        "A set of linear equations with the same variables",
+        "A single quadratic equation",
+        "A set of nonlinear equations",
+        "A system with only one variable"
+      ],
+      "correctIndex": 0,
+      "explanation": "A linear system consists of multiple linear equations with the same variables."
+    },
+    {
+      "question": "Which method transforms the system into an upper triangular form?",
+      "options": [
+        "Gaussian elimination",
+        "LU decomposition",
+        "Jacobi method",
+        "Newton's method"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gaussian elimination produces an upper triangular matrix."
+    },
+    {
+      "question": "What is the main advantage of LU decomposition?",
+      "options": [
+        "Efficiently solves multiple systems with the same coefficient matrix",
+        "It is the fastest for all systems",
+        "It works only for 2x2 matrices",
+        "It does not require matrix inversion"
+      ],
+      "correctIndex": 0,
+      "explanation": "LU decomposition is efficient for solving multiple systems with the same matrix."
+    },
+    {
+      "question": "Which method is suitable for large or sparse systems?",
+      "options": [
+        "Iterative methods like Jacobi or Gauss-Seidel",
+        "Gaussian elimination",
+        "Cramer's rule",
+        "Direct substitution"
+      ],
+      "correctIndex": 0,
+      "explanation": "Iterative methods are preferred for large or sparse systems."
+    },
+    {
+      "question": "What does the equation Ax = b represent?",
+      "options": [
+        "A linear system in matrix form",
+        "A quadratic equation",
+        "A polynomial interpolation",
+        "A differential equation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ax = b is the standard matrix form of a linear system."
+    },
+    {
+      "question": "What is back substitution?",
+      "options": [
+        "Solving for variables starting from the last equation in an upper triangular system",
+        "Substituting values into the original equations",
+        "A method for nonlinear systems",
+        "A type of matrix factorization"
+      ],
+      "correctIndex": 0,
+      "explanation": "Back substitution solves for variables from the last equation upwards."
+    },
+    {
+      "question": "Which method reduces the matrix to row echelon form?",
+      "options": [
+        "Gauss-Jordan elimination",
+        "Gaussian elimination",
+        "LU decomposition",
+        "Jacobi method"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gauss-Jordan elimination reduces the matrix to row echelon form."
+    },
+    {
+      "question": "What is a key property of the coefficient matrix for unique solutions?",
+      "options": [
+        "It must be non-singular (invertible)",
+        "It must be diagonal",
+        "It must be symmetric",
+        "It must be sparse"
+      ],
+      "correctIndex": 0,
+      "explanation": "A non-singular matrix ensures a unique solution."
+    }
+  ]
+}

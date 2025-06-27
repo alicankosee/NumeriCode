@@ -1,0 +1,22 @@
+{
+  "module": "Linear Systems",
+  "simulationTitle": "Solving Linear Systems",
+  "parameters": [
+    {
+      "name": "System Size",
+      "type": "stepper",
+      "min": 2,
+      "max": 6,
+      "default": 3,
+      "description": "Number of equations and unknowns."
+    },
+    {
+      "name": "Method",
+      "type": "segmented",
+      "options": ["Gauss", "Gauss-Seidel", "Jacobi"],
+      "default": "Gauss",
+      "description": "Solution method."
+    }
+  ],
+  "output": "Table showing solution steps and convergence"
+}

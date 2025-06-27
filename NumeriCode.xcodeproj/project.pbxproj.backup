@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1DD02B2E0430AF00E63F6D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0292E0430AF00E63F6D /* BaseViewController.swift */; };
+		3A1DD0312E0430C400E63F6D /* ErrorLabSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD02E2E0430C400E63F6D /* ErrorLabSimulationViewController.swift */; };
+		3A1DD0322E0430C400E63F6D /* ErrorLabQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD02D2E0430C400E63F6D /* ErrorLabQuizViewController.swift */; };
+		3A1DD0332E0430C400E63F6D /* ErrorLabLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD02C2E0430C400E63F6D /* ErrorLabLessonViewController.swift */; };
+		3A1DD0342E0430C400E63F6D /* ErrorLabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD02F2E0430C400E63F6D /* ErrorLabViewController.swift */; };
+		3A1DD03A2E0430DE00E63F6D /* EquationSolverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0382E0430DE00E63F6D /* EquationSolverViewController.swift */; };
+		3A1DD03B2E0430DE00E63F6D /* EquationSolverLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0352E0430DE00E63F6D /* EquationSolverLessonViewController.swift */; };
+		3A1DD03C2E0430DE00E63F6D /* EquationSolverQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0362E0430DE00E63F6D /* EquationSolverQuizViewController.swift */; };
+		3A1DD03D2E0430DE00E63F6D /* EquationSolverSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0372E0430DE00E63F6D /* EquationSolverSimulationViewController.swift */; };
+		3A1DD0432E0430F600E63F6D /* InterpolatorSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0402E0430F600E63F6D /* InterpolatorSimulationViewController.swift */; };
+		3A1DD0442E0430F600E63F6D /* InterpolatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0412E0430F600E63F6D /* InterpolatorViewController.swift */; };
+		3A1DD0452E0430F600E63F6D /* InterpolatorLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD03E2E0430F600E63F6D /* InterpolatorLessonViewController.swift */; };
+		3A1DD0462E0430F600E63F6D /* InterpolatorQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD03F2E0430F600E63F6D /* InterpolatorQuizViewController.swift */; };
+		3A1DD04B2E04368A00E63F6D /* LessonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0472E04368A00E63F6D /* LessonContentView.swift */; };
+		3A1DD04C2E04368A00E63F6D /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0482E04368A00E63F6D /* LessonView.swift */; };
+		3A1DD04D2E04368A00E63F6D /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0492E04368A00E63F6D /* QuizView.swift */; };
+		3A1DD04F2E04372B00E63F6D /* ContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD04E2E04372B00E63F6D /* ContentLoader.swift */; };
+		3A1DD0552E04376E00E63F6D /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0532E04376E00E63F6D /* QuizQuestion.swift */; };
+		3A1DD0562E04376E00E63F6D /* LessonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0522E04376E00E63F6D /* LessonContent.swift */; };
+		3A1DD05C2E043E6B00E63F6D /* LessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD0592E043E6B00E63F6D /* LessonViewModel.swift */; };
+		3A1DD05D2E043E6B00E63F6D /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD05A2E043E6B00E63F6D /* QuizViewModel.swift */; };
+		3A1DD05E2E043E6B00E63F6D /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD05B2E043E6B00E63F6D /* SimulationViewModel.swift */; };
+		3AB6A3CD2E04AC14005B887B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3CC2E04AC11005B887B /* QuizViewController.swift */; };
+		3AB6A3D32E04AE9E005B887B /* NumericalDifferentiationQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3CF2E04AE9E005B887B /* NumericalDifferentiationQuizViewController.swift */; };
+		3AB6A3D42E04AE9E005B887B /* NumericalDifferentiationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3D12E04AE9E005B887B /* NumericalDifferentiationViewController.swift */; };
+		3AB6A3D52E04AE9E005B887B /* NumericalDifferentiationLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3CE2E04AE9E005B887B /* NumericalDifferentiationLessonViewController.swift */; };
+		3AB6A3D62E04AE9E005B887B /* NumericalDifferentiationSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3D02E04AE9E005B887B /* NumericalDifferentiationSimulationViewController.swift */; };
+		3AB6A3DC2E04AEAA005B887B /* NumericalIntegrationQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3D82E04AEAA005B887B /* NumericalIntegrationQuizViewController.swift */; };
+		3AB6A3DD2E04AEAA005B887B /* NumericalIntegrationLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3D72E04AEAA005B887B /* NumericalIntegrationLessonViewController.swift */; };
+		3AB6A3DE2E04AEAA005B887B /* NumericalIntegrationSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3D92E04AEAA005B887B /* NumericalIntegrationSimulationViewController.swift */; };
+		3AB6A3DF2E04AEAA005B887B /* NumericalIntegrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3DA2E04AEAA005B887B /* NumericalIntegrationViewController.swift */; };
+		3AB6A3E12E04B13E005B887B /* ModuleProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3E02E04B13E005B887B /* ModuleProgressManager.swift */; };
+		3AB6A3E32E04B1E8005B887B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3E22E04B1E8005B887B /* HomeViewController.swift */; };
+		3AB6A3E52E04B64B005B887B /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3E42E04B64B005B887B /* LessonViewController.swift */; };
+		3AB6A3E72E04B658005B887B /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3E62E04B658005B887B /* SimulationViewController.swift */; };
+		3AB6A4002E05351E005B887B /* SimulationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A3FF2E05351B005B887B /* SimulationConfig.swift */; };
+		3AB6A4022E053543005B887B /* SimulationConfigLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A4012E053540005B887B /* SimulationConfigLoader.swift */; };
+		3AB6A4042E0586B0005B887B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A4032E0586AE005B887B /* GraphView.swift */; };
+		3AB6A40A2E059588005B887B /* LinearSystemsSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A4052E059588005B887B /* LinearSystemsSimulationViewController.swift */; };
+		3AB6A40B2E059588005B887B /* ODESolverSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A4072E059588005B887B /* ODESolverSimulationViewController.swift */; };
+		3AB6A40C2E059588005B887B /* OptimizationSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A4082E059588005B887B /* OptimizationSimulationViewController.swift */; };
+		3AB6A40D2E059588005B887B /* PerformanceAnalysisSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A4092E059588005B887B /* PerformanceAnalysisSimulationViewController.swift */; };
+		3AB6A40E2E059588005B887B /* LUDecompositionSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A4062E059588005B887B /* LUDecompositionSimulationViewController.swift */; };
+		3AB6A4122E05A7F8005B887B /* LinearSystemSolverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A4112E05A7F8005B887B /* LinearSystemSolverViewModel.swift */; };
+		3AB6A77B2E0974D3005B887B /* MTMathAtomFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7522E0974D3005B887B /* MTMathAtomFactory.m */; };
+		3AB6A77E2E0974D3005B887B /* MTMathList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7542E0974D3005B887B /* MTMathList.m */; };
+		3AB6A7802E0974D3005B887B /* MTMathListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7562E0974D3005B887B /* MTMathListBuilder.m */; };
+		3AB6A7812E0974D3005B887B /* MTFontMathTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A75E2E0974D3005B887B /* MTFontMathTable.m */; };
+		3AB6A7852E0974D3005B887B /* MTMathListIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7582E0974D3005B887B /* MTMathListIndex.m */; };
+		3AB6A7872E0974D3005B887B /* MTTypesetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7612E0974D3005B887B /* MTTypesetter.m */; };
+		3AB6A7882E0974D3005B887B /* MTUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A75A2E0974D3005B887B /* MTUnicode.m */; };
+		3AB6A79C2E097652005B887B /* NSView+backgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7992E097652005B887B /* NSView+backgroundColor.m */; };
+		3AB6A79D2E097652005B887B /* MTMathListDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7912E097652005B887B /* MTMathListDisplay.m */; };
+		3AB6A79E2E097652005B887B /* MTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A78F2E097652005B887B /* MTLabel.m */; };
+		3AB6A79F2E097652005B887B /* MTFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A78D2E097652005B887B /* MTFontManager.m */; };
+		3AB6A7A02E097652005B887B /* NSColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7972E097652005B887B /* NSColor+HexString.m */; };
+		3AB6A7A12E097652005B887B /* MTMathUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7932E097652005B887B /* MTMathUILabel.m */; };
+		3AB6A7A22E097652005B887B /* MTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A78B2E097652005B887B /* MTFont.m */; };
+		3AB6A7A32E097652005B887B /* NSBezierPath+addLineToPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7952E097652005B887B /* NSBezierPath+addLineToPoint.m */; };
+		3AB6A7A42E097652005B887B /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A79B2E097652005B887B /* UIColor+HexString.m */; };
+		3AB6A7B12E097885005B887B /* texgyretermes-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7AD2E097885005B887B /* texgyretermes-math.plist */; };
+		3AB6A7B22E097885005B887B /* README-Latin-Modern-Math.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7AA2E097885005B887B /* README-Latin-Modern-Math.txt */; };
+		3AB6A7B32E097885005B887B /* latinmodern-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7A62E097885005B887B /* latinmodern-math.otf */; };
+		3AB6A7B42E097885005B887B /* xits-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7AF2E097885005B887B /* xits-math.plist */; };
+		3AB6A7B52E097885005B887B /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7A92E097885005B887B /* OFL.txt */; };
+		3AB6A7B62E097885005B887B /* README-TeX-Gyre-Termes-Math.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7AB2E097885005B887B /* README-TeX-Gyre-Termes-Math.txt */; };
+		3AB6A7B72E097885005B887B /* xits-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7AE2E097885005B887B /* xits-math.otf */; };
+		3AB6A7B82E097885005B887B /* math_table_to_plist.py in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7A82E097885005B887B /* math_table_to_plist.py */; };
+		3AB6A7B92E097885005B887B /* latinmodern-math.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7A72E097885005B887B /* latinmodern-math.plist */; };
+		3AB6A7BA2E097885005B887B /* GUST-FONT-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7A52E097885005B887B /* GUST-FONT-LICENSE.txt */; };
+		3AB6A7BB2E097885005B887B /* texgyretermes-math.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AB6A7AC2E097885005B887B /* texgyretermes-math.otf */; };
+		3AB6A7BD2E0B5585005B887B /* NumericalDiffViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB6A7BC2E0B5585005B887B /* NumericalDiffViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A1DD00E2E04308700E63F6D /* NumeriCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumeriCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A1DD0292E0430AF00E63F6D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3A1DD02C2E0430C400E63F6D /* ErrorLabLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLabLessonViewController.swift; sourceTree = "<group>"; };
+		3A1DD02D2E0430C400E63F6D /* ErrorLabQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLabQuizViewController.swift; sourceTree = "<group>"; };
+		3A1DD02E2E0430C400E63F6D /* ErrorLabSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLabSimulationViewController.swift; sourceTree = "<group>"; };
+		3A1DD02F2E0430C400E63F6D /* ErrorLabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLabViewController.swift; sourceTree = "<group>"; };
+		3A1DD0352E0430DE00E63F6D /* EquationSolverLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationSolverLessonViewController.swift; sourceTree = "<group>"; };
+		3A1DD0362E0430DE00E63F6D /* EquationSolverQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationSolverQuizViewController.swift; sourceTree = "<group>"; };
+		3A1DD0372E0430DE00E63F6D /* EquationSolverSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationSolverSimulationViewController.swift; sourceTree = "<group>"; };
+		3A1DD0382E0430DE00E63F6D /* EquationSolverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationSolverViewController.swift; sourceTree = "<group>"; };
+		3A1DD03E2E0430F600E63F6D /* InterpolatorLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolatorLessonViewController.swift; sourceTree = "<group>"; };
+		3A1DD03F2E0430F600E63F6D /* InterpolatorQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolatorQuizViewController.swift; sourceTree = "<group>"; };
+		3A1DD0402E0430F600E63F6D /* InterpolatorSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolatorSimulationViewController.swift; sourceTree = "<group>"; };
+		3A1DD0412E0430F600E63F6D /* InterpolatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolatorViewController.swift; sourceTree = "<group>"; };
+		3A1DD0472E04368A00E63F6D /* LessonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonContentView.swift; sourceTree = "<group>"; };
+		3A1DD0482E04368A00E63F6D /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		3A1DD0492E04368A00E63F6D /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		3A1DD04E2E04372B00E63F6D /* ContentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoader.swift; sourceTree = "<group>"; };
+		3A1DD0522E04376E00E63F6D /* LessonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonContent.swift; sourceTree = "<group>"; };
+		3A1DD0532E04376E00E63F6D /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
+		3A1DD0592E043E6B00E63F6D /* LessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModel.swift; sourceTree = "<group>"; };
+		3A1DD05A2E043E6B00E63F6D /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		3A1DD05B2E043E6B00E63F6D /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
+		3AB6A3CC2E04AC11005B887B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		3AB6A3CE2E04AE9E005B887B /* NumericalDifferentiationLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalDifferentiationLessonViewController.swift; sourceTree = "<group>"; };
+		3AB6A3CF2E04AE9E005B887B /* NumericalDifferentiationQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalDifferentiationQuizViewController.swift; sourceTree = "<group>"; };
+		3AB6A3D02E04AE9E005B887B /* NumericalDifferentiationSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalDifferentiationSimulationViewController.swift; sourceTree = "<group>"; };
+		3AB6A3D12E04AE9E005B887B /* NumericalDifferentiationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalDifferentiationViewController.swift; sourceTree = "<group>"; };
+		3AB6A3D72E04AEAA005B887B /* NumericalIntegrationLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalIntegrationLessonViewController.swift; sourceTree = "<group>"; };
+		3AB6A3D82E04AEAA005B887B /* NumericalIntegrationQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalIntegrationQuizViewController.swift; sourceTree = "<group>"; };
+		3AB6A3D92E04AEAA005B887B /* NumericalIntegrationSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalIntegrationSimulationViewController.swift; sourceTree = "<group>"; };
+		3AB6A3DA2E04AEAA005B887B /* NumericalIntegrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalIntegrationViewController.swift; sourceTree = "<group>"; };
+		3AB6A3E02E04B13E005B887B /* ModuleProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleProgressManager.swift; sourceTree = "<group>"; };
+		3AB6A3E22E04B1E8005B887B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3AB6A3E42E04B64B005B887B /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
+		3AB6A3E62E04B658005B887B /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		3AB6A3FF2E05351B005B887B /* SimulationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationConfig.swift; sourceTree = "<group>"; };
+		3AB6A4012E053540005B887B /* SimulationConfigLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationConfigLoader.swift; sourceTree = "<group>"; };
+		3AB6A4032E0586AE005B887B /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		3AB6A4052E059588005B887B /* LinearSystemsSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSystemsSimulationViewController.swift; sourceTree = "<group>"; };
+		3AB6A4062E059588005B887B /* LUDecompositionSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUDecompositionSimulationViewController.swift; sourceTree = "<group>"; };
+		3AB6A4072E059588005B887B /* ODESolverSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODESolverSimulationViewController.swift; sourceTree = "<group>"; };
+		3AB6A4082E059588005B887B /* OptimizationSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimizationSimulationViewController.swift; sourceTree = "<group>"; };
+		3AB6A4092E059588005B887B /* PerformanceAnalysisSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceAnalysisSimulationViewController.swift; sourceTree = "<group>"; };
+		3AB6A4112E05A7F8005B887B /* LinearSystemSolverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSystemSolverViewModel.swift; sourceTree = "<group>"; };
+		3AB6A7512E0974D3005B887B /* MTMathAtomFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMathAtomFactory.h; sourceTree = "<group>"; };
+		3AB6A7522E0974D3005B887B /* MTMathAtomFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMathAtomFactory.m; sourceTree = "<group>"; };
+		3AB6A7532E0974D3005B887B /* MTMathList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMathList.h; sourceTree = "<group>"; };
+		3AB6A7542E0974D3005B887B /* MTMathList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMathList.m; sourceTree = "<group>"; };
+		3AB6A7552E0974D3005B887B /* MTMathListBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMathListBuilder.h; sourceTree = "<group>"; };
+		3AB6A7562E0974D3005B887B /* MTMathListBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMathListBuilder.m; sourceTree = "<group>"; };
+		3AB6A7572E0974D3005B887B /* MTMathListIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMathListIndex.h; sourceTree = "<group>"; };
+		3AB6A7582E0974D3005B887B /* MTMathListIndex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMathListIndex.m; sourceTree = "<group>"; };
+		3AB6A7592E0974D3005B887B /* MTUnicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTUnicode.h; sourceTree = "<group>"; };
+		3AB6A75A2E0974D3005B887B /* MTUnicode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTUnicode.m; sourceTree = "<group>"; };
+		3AB6A75C2E0974D3005B887B /* MTFont+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTFont+Internal.h"; sourceTree = "<group>"; };
+		3AB6A75D2E0974D3005B887B /* MTFontMathTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTFontMathTable.h; sourceTree = "<group>"; };
+		3AB6A75E2E0974D3005B887B /* MTFontMathTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFontMathTable.m; sourceTree = "<group>"; };
+		3AB6A75F2E0974D3005B887B /* MTMathListDisplayInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMathListDisplayInternal.h; sourceTree = "<group>"; };
+		3AB6A7602E0974D3005B887B /* MTTypesetter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTypesetter.h; sourceTree = "<group>"; };
+		3AB6A7612E0974D3005B887B /* MTTypesetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTypesetter.m; sourceTree = "<group>"; };
+		3AB6A7772E0974D3005B887B /* IosMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IosMath.h; sourceTree = "<group>"; };
+		3AB6A7892E097652005B887B /* MTConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTConfig.h; sourceTree = "<group>"; };
+		3AB6A78A2E097652005B887B /* MTFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTFont.h; sourceTree = "<group>"; };
+		3AB6A78B2E097652005B887B /* MTFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFont.m; sourceTree = "<group>"; };
+		3AB6A78C2E097652005B887B /* MTFontManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTFontManager.h; sourceTree = "<group>"; };
+		3AB6A78D2E097652005B887B /* MTFontManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTFontManager.m; sourceTree = "<group>"; };
+		3AB6A78E2E097652005B887B /* MTLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTLabel.h; sourceTree = "<group>"; };
+		3AB6A78F2E097652005B887B /* MTLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTLabel.m; sourceTree = "<group>"; };
+		3AB6A7902E097652005B887B /* MTMathListDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMathListDisplay.h; sourceTree = "<group>"; };
+		3AB6A7912E097652005B887B /* MTMathListDisplay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMathListDisplay.m; sourceTree = "<group>"; };
+		3AB6A7922E097652005B887B /* MTMathUILabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTMathUILabel.h; sourceTree = "<group>"; };
+		3AB6A7932E097652005B887B /* MTMathUILabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTMathUILabel.m; sourceTree = "<group>"; };
+		3AB6A7942E097652005B887B /* NSBezierPath+addLineToPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+addLineToPoint.h"; sourceTree = "<group>"; };
+		3AB6A7952E097652005B887B /* NSBezierPath+addLineToPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+addLineToPoint.m"; sourceTree = "<group>"; };
+		3AB6A7962E097652005B887B /* NSColor+HexString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+HexString.h"; sourceTree = "<group>"; };
+		3AB6A7972E097652005B887B /* NSColor+HexString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSColor+HexString.m"; sourceTree = "<group>"; };
+		3AB6A7982E097652005B887B /* NSView+backgroundColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+backgroundColor.h"; sourceTree = "<group>"; };
+		3AB6A7992E097652005B887B /* NSView+backgroundColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+backgroundColor.m"; sourceTree = "<group>"; };
+		3AB6A79A2E097652005B887B /* UIColor+HexString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		3AB6A79B2E097652005B887B /* UIColor+HexString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		3AB6A7A52E097885005B887B /* GUST-FONT-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GUST-FONT-LICENSE.txt"; sourceTree = "<group>"; };
+		3AB6A7A62E097885005B887B /* latinmodern-math.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "latinmodern-math.otf"; sourceTree = "<group>"; };
+		3AB6A7A72E097885005B887B /* latinmodern-math.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "latinmodern-math.plist"; sourceTree = "<group>"; };
+		3AB6A7A82E097885005B887B /* math_table_to_plist.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = math_table_to_plist.py; sourceTree = "<group>"; };
+		3AB6A7A92E097885005B887B /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		3AB6A7AA2E097885005B887B /* README-Latin-Modern-Math.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README-Latin-Modern-Math.txt"; sourceTree = "<group>"; };
+		3AB6A7AB2E097885005B887B /* README-TeX-Gyre-Termes-Math.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README-TeX-Gyre-Termes-Math.txt"; sourceTree = "<group>"; };
+		3AB6A7AC2E097885005B887B /* texgyretermes-math.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "texgyretermes-math.otf"; sourceTree = "<group>"; };
+		3AB6A7AD2E097885005B887B /* texgyretermes-math.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "texgyretermes-math.plist"; sourceTree = "<group>"; };
+		3AB6A7AE2E097885005B887B /* xits-math.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "xits-math.otf"; sourceTree = "<group>"; };
+		3AB6A7AF2E097885005B887B /* xits-math.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xits-math.plist"; sourceTree = "<group>"; };
+		3AB6A7BC2E0B5585005B887B /* NumericalDiffViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericalDiffViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3A1DD0232E04308900E63F6D /* Exceptions for "NumeriCode" folder in "NumeriCode" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3A1DD00D2E04308700E63F6D /* NumeriCode */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		3AB6A3EE2E053327005B887B /* Exceptions for "Content" folder in "Compile Sources" phase from "NumeriCode" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 3A1DD00A2E04308700E63F6D /* Sources */;
+			membershipExceptions = (
+				error_analysis.json,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3A1DD0102E04308700E63F6D /* NumeriCode */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3A1DD0232E04308900E63F6D /* Exceptions for "NumeriCode" folder in "NumeriCode" target */,
+			);
+			path = NumeriCode;
+			sourceTree = "<group>";
+		};
+		3AB6A3B42E04A0C7005B887B /* Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3AB6A3EE2E053327005B887B /* Exceptions for "Content" folder in "Compile Sources" phase from "NumeriCode" target */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A1DD00B2E04308700E63F6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A1DD0052E04308700E63F6D = {
+			isa = PBXGroup;
+			children = (
+				3AB6A7B02E097885005B887B /* fonts */,
+				3AB6A3DB2E04AEAA005B887B /* NumericalIntegration */,
+				3AB6A3D22E04AE9E005B887B /* NumericalDifferentiation */,
+				3AB6A3B42E04A0C7005B887B /* Content */,
+				3A1DD0542E04376E00E63F6D /* Models */,
+				3A1DD04A2E04368A00E63F6D /* Components */,
+				3A1DD0422E0430F600E63F6D /* Interpolator */,
+				3A1DD0392E0430DE00E63F6D /* EquationSolver */,
+				3A1DD0302E0430C400E63F6D /* ErrorLab */,
+				3A1DD02A2E0430AF00E63F6D /* Core */,
+				3A1DD0102E04308700E63F6D /* NumeriCode */,
+				3A1DD00F2E04308700E63F6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A1DD00F2E04308700E63F6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A1DD00E2E04308700E63F6D /* NumeriCode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A1DD02A2E0430AF00E63F6D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A4052E059588005B887B /* LinearSystemsSimulationViewController.swift */,
+				3AB6A4062E059588005B887B /* LUDecompositionSimulationViewController.swift */,
+				3AB6A4072E059588005B887B /* ODESolverSimulationViewController.swift */,
+				3AB6A4082E059588005B887B /* OptimizationSimulationViewController.swift */,
+				3AB6A4092E059588005B887B /* PerformanceAnalysisSimulationViewController.swift */,
+				3AB6A4012E053540005B887B /* SimulationConfigLoader.swift */,
+				3AB6A3E02E04B13E005B887B /* ModuleProgressManager.swift */,
+				3A1DD04E2E04372B00E63F6D /* ContentLoader.swift */,
+				3A1DD0292E0430AF00E63F6D /* BaseViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3A1DD0302E0430C400E63F6D /* ErrorLab */ = {
+			isa = PBXGroup;
+			children = (
+				3A1DD02C2E0430C400E63F6D /* ErrorLabLessonViewController.swift */,
+				3A1DD02D2E0430C400E63F6D /* ErrorLabQuizViewController.swift */,
+				3A1DD02E2E0430C400E63F6D /* ErrorLabSimulationViewController.swift */,
+				3A1DD02F2E0430C400E63F6D /* ErrorLabViewController.swift */,
+			);
+			path = ErrorLab;
+			sourceTree = "<group>";
+		};
+		3A1DD0392E0430DE00E63F6D /* EquationSolver */ = {
+			isa = PBXGroup;
+			children = (
+				3A1DD0592E043E6B00E63F6D /* LessonViewModel.swift */,
+				3A1DD05A2E043E6B00E63F6D /* QuizViewModel.swift */,
+				3A1DD05B2E043E6B00E63F6D /* SimulationViewModel.swift */,
+				3A1DD0352E0430DE00E63F6D /* EquationSolverLessonViewController.swift */,
+				3A1DD0362E0430DE00E63F6D /* EquationSolverQuizViewController.swift */,
+				3A1DD0372E0430DE00E63F6D /* EquationSolverSimulationViewController.swift */,
+				3A1DD0382E0430DE00E63F6D /* EquationSolverViewController.swift */,
+			);
+			path = EquationSolver;
+			sourceTree = "<group>";
+		};
+		3A1DD0422E0430F600E63F6D /* Interpolator */ = {
+			isa = PBXGroup;
+			children = (
+				3A1DD03E2E0430F600E63F6D /* InterpolatorLessonViewController.swift */,
+				3A1DD03F2E0430F600E63F6D /* InterpolatorQuizViewController.swift */,
+				3A1DD0402E0430F600E63F6D /* InterpolatorSimulationViewController.swift */,
+				3A1DD0412E0430F600E63F6D /* InterpolatorViewController.swift */,
+			);
+			path = Interpolator;
+			sourceTree = "<group>";
+		};
+		3A1DD04A2E04368A00E63F6D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A7782E0974D3005B887B /* iosMath */,
+				3AB6A4032E0586AE005B887B /* GraphView.swift */,
+				3AB6A3E62E04B658005B887B /* SimulationViewController.swift */,
+				3AB6A3E42E04B64B005B887B /* LessonViewController.swift */,
+				3AB6A3E22E04B1E8005B887B /* HomeViewController.swift */,
+				3AB6A3CC2E04AC11005B887B /* QuizViewController.swift */,
+				3A1DD0472E04368A00E63F6D /* LessonContentView.swift */,
+				3A1DD0482E04368A00E63F6D /* LessonView.swift */,
+				3A1DD0492E04368A00E63F6D /* QuizView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3A1DD0542E04376E00E63F6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A7BC2E0B5585005B887B /* NumericalDiffViewModel.swift */,
+				3AB6A4112E05A7F8005B887B /* LinearSystemSolverViewModel.swift */,
+				3AB6A3FF2E05351B005B887B /* SimulationConfig.swift */,
+				3A1DD0522E04376E00E63F6D /* LessonContent.swift */,
+				3A1DD0532E04376E00E63F6D /* QuizQuestion.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AB6A3D22E04AE9E005B887B /* NumericalDifferentiation */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A3CE2E04AE9E005B887B /* NumericalDifferentiationLessonViewController.swift */,
+				3AB6A3CF2E04AE9E005B887B /* NumericalDifferentiationQuizViewController.swift */,
+				3AB6A3D02E04AE9E005B887B /* NumericalDifferentiationSimulationViewController.swift */,
+				3AB6A3D12E04AE9E005B887B /* NumericalDifferentiationViewController.swift */,
+			);
+			path = NumericalDifferentiation;
+			sourceTree = "<group>";
+		};
+		3AB6A3DB2E04AEAA005B887B /* NumericalIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A3D72E04AEAA005B887B /* NumericalIntegrationLessonViewController.swift */,
+				3AB6A3D82E04AEAA005B887B /* NumericalIntegrationQuizViewController.swift */,
+				3AB6A3D92E04AEAA005B887B /* NumericalIntegrationSimulationViewController.swift */,
+				3AB6A3DA2E04AEAA005B887B /* NumericalIntegrationViewController.swift */,
+			);
+			path = NumericalIntegration;
+			sourceTree = "<group>";
+		};
+		3AB6A75B2E0974D3005B887B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A7512E0974D3005B887B /* MTMathAtomFactory.h */,
+				3AB6A7522E0974D3005B887B /* MTMathAtomFactory.m */,
+				3AB6A7532E0974D3005B887B /* MTMathList.h */,
+				3AB6A7542E0974D3005B887B /* MTMathList.m */,
+				3AB6A7552E0974D3005B887B /* MTMathListBuilder.h */,
+				3AB6A7562E0974D3005B887B /* MTMathListBuilder.m */,
+				3AB6A7572E0974D3005B887B /* MTMathListIndex.h */,
+				3AB6A7582E0974D3005B887B /* MTMathListIndex.m */,
+				3AB6A7592E0974D3005B887B /* MTUnicode.h */,
+				3AB6A75A2E0974D3005B887B /* MTUnicode.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		3AB6A7622E0974D3005B887B /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A75C2E0974D3005B887B /* MTFont+Internal.h */,
+				3AB6A75D2E0974D3005B887B /* MTFontMathTable.h */,
+				3AB6A75E2E0974D3005B887B /* MTFontMathTable.m */,
+				3AB6A75F2E0974D3005B887B /* MTMathListDisplayInternal.h */,
+				3AB6A7602E0974D3005B887B /* MTTypesetter.h */,
+				3AB6A7612E0974D3005B887B /* MTTypesetter.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		3AB6A7762E0974D3005B887B /* render */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A7892E097652005B887B /* MTConfig.h */,
+				3AB6A78A2E097652005B887B /* MTFont.h */,
+				3AB6A78B2E097652005B887B /* MTFont.m */,
+				3AB6A78C2E097652005B887B /* MTFontManager.h */,
+				3AB6A78D2E097652005B887B /* MTFontManager.m */,
+				3AB6A78E2E097652005B887B /* MTLabel.h */,
+				3AB6A78F2E097652005B887B /* MTLabel.m */,
+				3AB6A7902E097652005B887B /* MTMathListDisplay.h */,
+				3AB6A7912E097652005B887B /* MTMathListDisplay.m */,
+				3AB6A7922E097652005B887B /* MTMathUILabel.h */,
+				3AB6A7932E097652005B887B /* MTMathUILabel.m */,
+				3AB6A7942E097652005B887B /* NSBezierPath+addLineToPoint.h */,
+				3AB6A7952E097652005B887B /* NSBezierPath+addLineToPoint.m */,
+				3AB6A7962E097652005B887B /* NSColor+HexString.h */,
+				3AB6A7972E097652005B887B /* NSColor+HexString.m */,
+				3AB6A7982E097652005B887B /* NSView+backgroundColor.h */,
+				3AB6A7992E097652005B887B /* NSView+backgroundColor.m */,
+				3AB6A79A2E097652005B887B /* UIColor+HexString.h */,
+				3AB6A79B2E097652005B887B /* UIColor+HexString.m */,
+				3AB6A7622E0974D3005B887B /* internal */,
+			);
+			path = render;
+			sourceTree = "<group>";
+		};
+		3AB6A7782E0974D3005B887B /* iosMath */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A75B2E0974D3005B887B /* lib */,
+				3AB6A7762E0974D3005B887B /* render */,
+				3AB6A7772E0974D3005B887B /* IosMath.h */,
+			);
+			path = iosMath;
+			sourceTree = "<group>";
+		};
+		3AB6A7B02E097885005B887B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3AB6A7A52E097885005B887B /* GUST-FONT-LICENSE.txt */,
+				3AB6A7A62E097885005B887B /* latinmodern-math.otf */,
+				3AB6A7A72E097885005B887B /* latinmodern-math.plist */,
+				3AB6A7A82E097885005B887B /* math_table_to_plist.py */,
+				3AB6A7A92E097885005B887B /* OFL.txt */,
+				3AB6A7AA2E097885005B887B /* README-Latin-Modern-Math.txt */,
+				3AB6A7AB2E097885005B887B /* README-TeX-Gyre-Termes-Math.txt */,
+				3AB6A7AC2E097885005B887B /* texgyretermes-math.otf */,
+				3AB6A7AD2E097885005B887B /* texgyretermes-math.plist */,
+				3AB6A7AE2E097885005B887B /* xits-math.otf */,
+				3AB6A7AF2E097885005B887B /* xits-math.plist */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A1DD00D2E04308700E63F6D /* NumeriCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A1DD0242E04308900E63F6D /* Build configuration list for PBXNativeTarget "NumeriCode" */;
+			buildPhases = (
+				3A1DD00A2E04308700E63F6D /* Sources */,
+				3A1DD00B2E04308700E63F6D /* Frameworks */,
+				3A1DD00C2E04308700E63F6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3A1DD0102E04308700E63F6D /* NumeriCode */,
+				3AB6A3B42E04A0C7005B887B /* Content */,
+			);
+			name = NumeriCode;
+			packageProductDependencies = (
+			);
+			productName = NumeriCode;
+			productReference = 3A1DD00E2E04308700E63F6D /* NumeriCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A1DD0062E04308700E63F6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					3A1DD00D2E04308700E63F6D = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 3A1DD0092E04308700E63F6D /* Build configuration list for PBXProject "NumeriCode" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A1DD0052E04308700E63F6D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3A1DD00F2E04308700E63F6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A1DD00D2E04308700E63F6D /* NumeriCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A1DD00C2E04308700E63F6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB6A7B12E097885005B887B /* texgyretermes-math.plist in Resources */,
+				3AB6A7B22E097885005B887B /* README-Latin-Modern-Math.txt in Resources */,
+				3AB6A7B32E097885005B887B /* latinmodern-math.otf in Resources */,
+				3AB6A7B42E097885005B887B /* xits-math.plist in Resources */,
+				3AB6A7B52E097885005B887B /* OFL.txt in Resources */,
+				3AB6A7B62E097885005B887B /* README-TeX-Gyre-Termes-Math.txt in Resources */,
+				3AB6A7B72E097885005B887B /* xits-math.otf in Resources */,
+				3AB6A7B82E097885005B887B /* math_table_to_plist.py in Resources */,
+				3AB6A7B92E097885005B887B /* latinmodern-math.plist in Resources */,
+				3AB6A7BA2E097885005B887B /* GUST-FONT-LICENSE.txt in Resources */,
+				3AB6A7BB2E097885005B887B /* texgyretermes-math.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A1DD00A2E04308700E63F6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1DD02B2E0430AF00E63F6D /* BaseViewController.swift in Sources */,
+				3A1DD0312E0430C400E63F6D /* ErrorLabSimulationViewController.swift in Sources */,
+				3AB6A4042E0586B0005B887B /* GraphView.swift in Sources */,
+				3A1DD04B2E04368A00E63F6D /* LessonContentView.swift in Sources */,
+				3AB6A3E32E04B1E8005B887B /* HomeViewController.swift in Sources */,
+				3A1DD04C2E04368A00E63F6D /* LessonView.swift in Sources */,
+				3A1DD04D2E04368A00E63F6D /* QuizView.swift in Sources */,
+				3A1DD05C2E043E6B00E63F6D /* LessonViewModel.swift in Sources */,
+				3A1DD05D2E043E6B00E63F6D /* QuizViewModel.swift in Sources */,
+				3A1DD05E2E043E6B00E63F6D /* SimulationViewModel.swift in Sources */,
+				3A1DD0322E0430C400E63F6D /* ErrorLabQuizViewController.swift in Sources */,
+				3A1DD03A2E0430DE00E63F6D /* EquationSolverViewController.swift in Sources */,
+				3A1DD04F2E04372B00E63F6D /* ContentLoader.swift in Sources */,
+				3A1DD0432E0430F600E63F6D /* InterpolatorSimulationViewController.swift in Sources */,
+				3A1DD0442E0430F600E63F6D /* InterpolatorViewController.swift in Sources */,
+				3AB6A3DC2E04AEAA005B887B /* NumericalIntegrationQuizViewController.swift in Sources */,
+				3AB6A3DD2E04AEAA005B887B /* NumericalIntegrationLessonViewController.swift in Sources */,
+				3AB6A79C2E097652005B887B /* NSView+backgroundColor.m in Sources */,
+				3AB6A79D2E097652005B887B /* MTMathListDisplay.m in Sources */,
+				3AB6A79E2E097652005B887B /* MTLabel.m in Sources */,
+				3AB6A79F2E097652005B887B /* MTFontManager.m in Sources */,
+				3AB6A7A02E097652005B887B /* NSColor+HexString.m in Sources */,
+				3AB6A7A12E097652005B887B /* MTMathUILabel.m in Sources */,
+				3AB6A7A22E097652005B887B /* MTFont.m in Sources */,
+				3AB6A7A32E097652005B887B /* NSBezierPath+addLineToPoint.m in Sources */,
+				3AB6A7A42E097652005B887B /* UIColor+HexString.m in Sources */,
+				3AB6A3DE2E04AEAA005B887B /* NumericalIntegrationSimulationViewController.swift in Sources */,
+				3AB6A3DF2E04AEAA005B887B /* NumericalIntegrationViewController.swift in Sources */,
+				3AB6A4022E053543005B887B /* SimulationConfigLoader.swift in Sources */,
+				3A1DD0452E0430F600E63F6D /* InterpolatorLessonViewController.swift in Sources */,
+				3A1DD0462E0430F600E63F6D /* InterpolatorQuizViewController.swift in Sources */,
+				3A1DD03B2E0430DE00E63F6D /* EquationSolverLessonViewController.swift in Sources */,
+				3AB6A4002E05351E005B887B /* SimulationConfig.swift in Sources */,
+				3AB6A4122E05A7F8005B887B /* LinearSystemSolverViewModel.swift in Sources */,
+				3AB6A3E12E04B13E005B887B /* ModuleProgressManager.swift in Sources */,
+				3AB6A40A2E059588005B887B /* LinearSystemsSimulationViewController.swift in Sources */,
+				3AB6A40B2E059588005B887B /* ODESolverSimulationViewController.swift in Sources */,
+				3AB6A40C2E059588005B887B /* OptimizationSimulationViewController.swift in Sources */,
+				3AB6A77B2E0974D3005B887B /* MTMathAtomFactory.m in Sources */,
+				3AB6A77E2E0974D3005B887B /* MTMathList.m in Sources */,
+				3AB6A7802E0974D3005B887B /* MTMathListBuilder.m in Sources */,
+				3AB6A7812E0974D3005B887B /* MTFontMathTable.m in Sources */,
+				3AB6A7852E0974D3005B887B /* MTMathListIndex.m in Sources */,
+				3AB6A7872E0974D3005B887B /* MTTypesetter.m in Sources */,
+				3AB6A7882E0974D3005B887B /* MTUnicode.m in Sources */,
+				3AB6A40D2E059588005B887B /* PerformanceAnalysisSimulationViewController.swift in Sources */,
+				3AB6A40E2E059588005B887B /* LUDecompositionSimulationViewController.swift in Sources */,
+				3A1DD03C2E0430DE00E63F6D /* EquationSolverQuizViewController.swift in Sources */,
+				3AB6A3E72E04B658005B887B /* SimulationViewController.swift in Sources */,
+				3A1DD03D2E0430DE00E63F6D /* EquationSolverSimulationViewController.swift in Sources */,
+				3AB6A3D32E04AE9E005B887B /* NumericalDifferentiationQuizViewController.swift in Sources */,
+				3AB6A3D42E04AE9E005B887B /* NumericalDifferentiationViewController.swift in Sources */,
+				3AB6A3D52E04AE9E005B887B /* NumericalDifferentiationLessonViewController.swift in Sources */,
+				3AB6A3D62E04AE9E005B887B /* NumericalDifferentiationSimulationViewController.swift in Sources */,
+				3A1DD0332E0430C400E63F6D /* ErrorLabLessonViewController.swift in Sources */,
+				3A1DD0552E04376E00E63F6D /* QuizQuestion.swift in Sources */,
+				3AB6A3CD2E04AC14005B887B /* QuizViewController.swift in Sources */,
+				3A1DD0562E04376E00E63F6D /* LessonContent.swift in Sources */,
+				3AB6A3E52E04B64B005B887B /* LessonViewController.swift in Sources */,
+				3AB6A7BD2E0B5585005B887B /* NumericalDiffViewModel.swift in Sources */,
+				3A1DD0342E0430C400E63F6D /* ErrorLabViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A1DD0252E04308900E63F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77Z4RP9325;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Components/iosMath/render/**",
+					"$(SRCROOT)/Components/iosMath/lib/**",
+				);
+				INFOPLIST_FILE = NumeriCode/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alicankose.NumeriCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NumeriCode/NumeriCode-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A1DD0262E04308900E63F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77Z4RP9325;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Components/iosMath/render/**",
+					"$(SRCROOT)/Components/iosMath/lib/**",
+				);
+				INFOPLIST_FILE = NumeriCode/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alicankose.NumeriCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NumeriCode/NumeriCode-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A1DD0272E04308900E63F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 77Z4RP9325;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A1DD0282E04308900E63F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 77Z4RP9325;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A1DD0092E04308700E63F6D /* Build configuration list for PBXProject "NumeriCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A1DD0272E04308900E63F6D /* Debug */,
+				3A1DD0282E04308900E63F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A1DD0242E04308900E63F6D /* Build configuration list for PBXNativeTarget "NumeriCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A1DD0252E04308900E63F6D /* Debug */,
+				3A1DD0262E04308900E63F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A1DD0062E04308700E63F6D /* Project object */;
+}

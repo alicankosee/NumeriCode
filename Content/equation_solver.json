@@ -1,0 +1,28 @@
+{
+  "module": "Equation Solver",
+  "simulationTitle": "Root Finding Methods",
+  "parameters": [
+    {
+      "name": "Equation",
+      "type": "textField",
+      "default": "x^3 - x - 2",
+      "description": "Equation to solve (e.g., x^3 - x - 2)."
+    },
+    {
+      "name": "Method",
+      "type": "segmented",
+      "options": ["Bisection", "Newton-Raphson", "Secant"],
+      "default": "Bisection",
+      "description": "Numerical method for root finding."
+    },
+    {
+      "name": "Tolerance",
+      "type": "slider",
+      "min": 0.0001,
+      "max": 0.1,
+      "default": 0.01,
+      "description": "Acceptable error for the solution."
+    }
+  ],
+  "output": "Table and graph of root approximation steps"
+}

@@ -1,0 +1,106 @@
+{
+  "lesson": {
+    "title": "Optimization",
+    "paragraphs": [
+      "Optimization is the process of finding the best solution or maximum/minimum value of a function within a given set of constraints.",
+      "Optimization problems are common in engineering, economics, machine learning, and many scientific fields.",
+      "There are two main types: unconstrained optimization (no restrictions on variables) and constrained optimization (variables must satisfy certain conditions).",
+      "Common methods for unconstrained optimization include gradient descent, Newton's method, and the golden section search.",
+      "Constrained optimization often uses methods like Lagrange multipliers, simplex method, or penalty functions.",
+      "Local optimization finds the best solution in a small region, while global optimization seeks the absolute best over the entire domain.",
+      "Convex optimization problems have a single global minimum, making them easier to solve.",
+      "Nonlinear and non-convex problems may have multiple local minima and require more advanced techniques."
+    ],
+    "formula": "min f(x), subject to g_i(x) ≤ 0, h_j(x) = 0"
+  },
+  "quiz": [
+    {
+      "question": "What is optimization?",
+      "options": [
+        "Finding the best solution or maximum/minimum value of a function",
+        "Solving linear equations",
+        "Calculating derivatives",
+        "Estimating integrals"
+      ],
+      "correctIndex": 0,
+      "explanation": "Optimization seeks the best solution or extremum of a function."
+    },
+    {
+      "question": "Which of the following is an unconstrained optimization method?",
+      "options": [
+        "Gradient descent",
+        "Simplex method",
+        "Lagrange multipliers",
+        "Penalty functions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gradient descent is used for unconstrained optimization."
+    },
+    {
+      "question": "What is the difference between local and global optimization?",
+      "options": [
+        "Local finds the best in a region, global finds the absolute best",
+        "Local is always better",
+        "Global is only for linear problems",
+        "There is no difference"
+      ],
+      "correctIndex": 0,
+      "explanation": "Local optimization is regional; global is over the entire domain."
+    },
+    {
+      "question": "Which type of problem is easier to solve?",
+      "options": [
+        "Convex optimization",
+        "Non-convex optimization",
+        "Nonlinear optimization",
+        "Discrete optimization"
+      ],
+      "correctIndex": 0,
+      "explanation": "Convex problems have a single global minimum."
+    },
+    {
+      "question": "What is a constraint in optimization?",
+      "options": [
+        "A condition that variables must satisfy",
+        "A type of solution",
+        "A method for solving equations",
+        "A type of function"
+      ],
+      "correctIndex": 0,
+      "explanation": "Constraints restrict the possible values of variables."
+    },
+    {
+      "question": "Which method is commonly used for constrained optimization?",
+      "options": [
+        "Lagrange multipliers",
+        "Gradient descent",
+        "Newton's method",
+        "Golden section search"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lagrange multipliers handle constraints."
+    },
+    {
+      "question": "What is the objective function?",
+      "options": [
+        "The function to be minimized or maximized",
+        "A constraint",
+        "A variable",
+        "A solution method"
+      ],
+      "correctIndex": 0,
+      "explanation": "The objective function is what you optimize."
+    },
+    {
+      "question": "Optimization is widely used in:",
+      "options": [
+        "Engineering and economics",
+        "Cooking",
+        "Painting",
+        "Music"
+      ],
+      "correctIndex": 0,
+      "explanation": "Optimization is fundamental in engineering, economics, and science."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "lesson": {
+    "title": "Root Finding: Bisection, Newton-Raphson, and Secant Methods",
+    "paragraphs": [
+      "Root finding methods are used to determine values of x for which f(x) = 0. These methods are crucial in numerical computations and applied across engineering, physics, and economics.",
+      "The Bisection method is a bracketing method that requires two initial guesses a and b such that f(a) and f(b) have opposite signs. It repeatedly bisects the interval and chooses the subinterval in which the root lies. This method is simple and guaranteed to converge if the function is continuous on the interval.",
+      "The Newton-Raphson method is an open method that uses the derivative of the function. Starting with an initial guess x\u2080, it updates using the formula x\u2081 = x\u2080 - f(x\u2080)/f'(x\u2080). This method converges rapidly when close to the root, but may fail if the derivative is zero or if the function is not well-behaved.",
+      "The Secant method is similar to Newton-Raphson but does not require the derivative. It approximates the derivative using two recent points. It uses the formula x\u2099\u208a\u2081 = x\u2099 - f(x\u2099)*(x\u2099 - x\u2099\u208b\u2081)/(f(x\u2099) - f(x\u2099\u208b\u2081)).",
+      "Convergence speed: Newton-Raphson > Secant > Bisection (on average). However, Bisection is the most robust as it always converges for continuous functions.",
+      "These methods are often used in real-world scenarios like solving nonlinear equations in electrical circuits, finding equilibrium points in economics, or calculating kinematics in physics."
+    ],
+    "formula": "x\u2099\u208a\u2081 = x\u2099 - f(x\u2099)/f'(x\u2099)"
+  },
+  "quiz": [
+    {
+      "question": "What is the main requirement for applying the Bisection method?",
+      "options": [
+        "Function must be linear",
+        "Derivative must be known",
+        "f(a) and f(b) must have opposite signs",
+        "Initial guess must be exact"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bisection requires f(a) and f(b) to have opposite signs to ensure a root lies between them."
+    },
+    {
+      "question": "Which method requires the function\u2019s derivative?",
+      "options": [
+        "Bisection",
+        "Secant",
+        "Newton-Raphson",
+        "All of them"
+      ],
+      "correctIndex": 2,
+      "explanation": "Newton-Raphson uses the derivative to update the guess using its formula."
+    },
+    {
+      "question": "Which method is most robust but converges slowly?",
+      "options": [
+        "Bisection",
+        "Newton-Raphson",
+        "Secant",
+        "Fixed-point iteration"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bisection is guaranteed to converge for continuous functions but is slower than others."
+    },
+    {
+      "question": "In Newton-Raphson, what happens if f'(x) is zero?",
+      "options": [
+        "Method becomes faster",
+        "It diverges",
+        "It skips a step",
+        "It switches to bisection"
+      ],
+      "correctIndex": 1,
+      "explanation": "Division by zero in the formula causes failure; method may diverge or stop."
+    },
+    {
+      "question": "What is the main advantage of the Secant method over Newton-Raphson?",
+      "options": [
+        "It requires derivative",
+        "It is faster",
+        "It avoids derivative calculation",
+        "It does not require initial guesses"
+      ],
+      "correctIndex": 2,
+      "explanation": "Secant method approximates the derivative using two points, avoiding explicit differentiation."
+    },
+    {
+      "question": "Which method has the fastest theoretical convergence?",
+      "options": [
+        "Secant",
+        "Newton-Raphson",
+        "Bisection",
+        "False Position"
+      ],
+      "correctIndex": 1,
+      "explanation": "Newton-Raphson has quadratic convergence, which is faster than the others."
+    },
+    {
+      "question": "Why might Newton-Raphson fail to converge?",
+      "options": [
+        "Bad initial guess",
+        "Function is linear",
+        "Method is always divergent",
+        "Root is at x = 0"
+      ],
+      "correctIndex": 0,
+      "explanation": "A poor initial guess or zero derivative can lead to divergence."
+    },
+    {
+      "question": "How is the next guess calculated in the Secant method?",
+      "options": [
+        "Midpoint of interval",
+        "Using Newton\u2019s formula",
+        "Using two previous points and function values",
+        "By halving the previous guess"
+      ],
+      "correctIndex": 2,
+      "explanation": "Secant method uses two prior points to estimate the slope (derivative) and compute the next guess."
+    },
+    {
+      "question": "What is a real-world example of root finding?",
+      "options": [
+        "Solving a crossword puzzle",
+        "Finding break-even points in economics",
+        "Calculating GPA",
+        "Designing a logo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Root-finding methods are used to solve nonlinear equations, such as determining equilibrium in economics."
+    },
+    {
+      "question": "What is the stopping criterion commonly used in root finding?",
+      "options": [
+        "x < 0",
+        "Number of steps = 5",
+        "Error tolerance threshold",
+        "Derivative equals 1"
+      ],
+      "correctIndex": 2,
+      "explanation": "Iterations stop when the estimated error falls below a predefined tolerance level."
+    }
+  ]
+}

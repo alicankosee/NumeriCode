@@ -1,0 +1,22 @@
+{
+  "module": "LU Decomposition",
+  "simulationTitle": "LU Matrix Factorization",
+  "parameters": [
+    {
+      "name": "Matrix Size",
+      "type": "stepper",
+      "min": 2,
+      "max": 6,
+      "default": 3,
+      "description": "Size of the square matrix."
+    },
+    {
+      "name": "Show Steps",
+      "type": "segmented",
+      "options": ["Yes", "No"],
+      "default": "Yes",
+      "description": "Display step-by-step factorization."
+    }
+  ],
+  "output": "Table showing L and U matrices and step-by-step process"
+}

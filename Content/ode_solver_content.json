@@ -1,0 +1,106 @@
+{
+  "lesson": {
+    "title": "ODE Solver",
+    "paragraphs": [
+      "An ordinary differential equation (ODE) involves functions of one independent variable and their derivatives.",
+      "ODE solvers are algorithms used to approximate the solution of ODEs when an analytical solution is difficult or impossible to obtain.",
+      "Common numerical methods for solving ODEs include Euler's method, Runge-Kutta methods, and multistep methods.",
+      "Euler's method is the simplest, using tangent line approximations, but can be inaccurate for large step sizes.",
+      "The Runge-Kutta methods, especially the fourth-order (RK4), are widely used for their balance of accuracy and computational cost.",
+      "Multistep methods, such as Adams-Bashforth and Adams-Moulton, use information from previous steps to improve accuracy.",
+      "The choice of method depends on the required accuracy, stability, and computational resources.",
+      "ODE solvers are essential in modeling physical, biological, and engineering systems."
+    ],
+    "formula": "y_{n+1} = y_n + h f(x_n, y_n)"
+  },
+  "quiz": [
+    {
+      "question": "What is an ordinary differential equation (ODE)?",
+      "options": [
+        "An equation involving functions of one variable and their derivatives",
+        "An equation with only algebraic terms",
+        "A partial differential equation",
+        "A system of linear equations"
+      ],
+      "correctIndex": 0,
+      "explanation": "ODEs involve derivatives with respect to a single variable."
+    },
+    {
+      "question": "Which method is the simplest ODE solver?",
+      "options": [
+        "Euler's method",
+        "Runge-Kutta method",
+        "Adams-Bashforth method",
+        "Finite difference method"
+      ],
+      "correctIndex": 0,
+      "explanation": "Euler's method is the simplest and most basic ODE solver."
+    },
+    {
+      "question": "What is a disadvantage of Euler's method?",
+      "options": [
+        "It can be inaccurate for large step sizes",
+        "It is always the most accurate",
+        "It requires solving nonlinear equations",
+        "It cannot be used for initial value problems"
+      ],
+      "correctIndex": 0,
+      "explanation": "Euler's method can be inaccurate if the step size is too large."
+    },
+    {
+      "question": "Which ODE solver is known for its balance of accuracy and computational cost?",
+      "options": [
+        "Fourth-order Runge-Kutta (RK4)",
+        "Euler's method",
+        "Backward Euler method",
+        "Finite element method"
+      ],
+      "correctIndex": 0,
+      "explanation": "RK4 is widely used for its accuracy and efficiency."
+    },
+    {
+      "question": "What do multistep methods use to improve accuracy?",
+      "options": [
+        "Information from previous steps",
+        "Only the current step",
+        "Random guesses",
+        "No information from the function"
+      ],
+      "correctIndex": 0,
+      "explanation": "Multistep methods use previous values to improve accuracy."
+    },
+    {
+      "question": "Which of the following is a multistep method?",
+      "options": [
+        "Adams-Bashforth",
+        "Euler's method",
+        "Runge-Kutta method",
+        "Newton's method"
+      ],
+      "correctIndex": 0,
+      "explanation": "Adams-Bashforth is a type of multistep method."
+    },
+    {
+      "question": "ODE solvers are essential in modeling:",
+      "options": [
+        "Physical, biological, and engineering systems",
+        "Cooking recipes",
+        "Painting techniques",
+        "Music composition"
+      ],
+      "correctIndex": 0,
+      "explanation": "ODE solvers are used in many scientific and engineering fields."
+    },
+    {
+      "question": "What does the formula y_{n+1} = y_n + h f(x_n, y_n) represent?",
+      "options": [
+        "Euler's method update formula",
+        "Trapezoidal rule",
+        "Central difference formula",
+        "LU decomposition"
+      ],
+      "correctIndex": 0,
+      "explanation": "This is the update formula for Euler's method."
+    }
+  ]
+}

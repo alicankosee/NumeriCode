@@ -1,0 +1,106 @@
+{
+  "lesson": {
+    "title": "Performance Analysis",
+    "paragraphs": [
+      "Performance analysis in numerical methods evaluates the efficiency, accuracy, and stability of algorithms.",
+      "Key metrics include computational complexity, memory usage, and error propagation.",
+      "Computational complexity describes how the required resources (time, operations) grow with problem size.",
+      "Stability refers to how errors (such as round-off or truncation) affect the outcome of an algorithm.",
+      "An algorithm is stable if small input errors do not cause large output errors.",
+      "Accuracy measures how close the computed solution is to the true value.",
+      "Efficiency balances accuracy and computational cost, aiming for the best result with the least resources.",
+      "Performance analysis helps in selecting the most appropriate algorithm for a given problem."
+    ],
+    "formula": "O(n^2), O(n^3) (examples of computational complexity)"
+  },
+  "quiz": [
+    {
+      "question": "What does performance analysis evaluate in numerical methods?",
+      "options": [
+        "Efficiency, accuracy, and stability of algorithms",
+        "The color of the output",
+        "The programming language used",
+        "The number of variables only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance analysis focuses on efficiency, accuracy, and stability."
+    },
+    {
+      "question": "What is computational complexity?",
+      "options": [
+        "How resources grow with problem size",
+        "The number of colors in a plot",
+        "The type of computer used",
+        "The accuracy of the result"
+      ],
+      "correctIndex": 0,
+      "explanation": "Computational complexity measures resource growth with problem size."
+    },
+    {
+      "question": "What does stability mean in numerical algorithms?",
+      "options": [
+        "Small input errors do not cause large output errors",
+        "The algorithm runs fast",
+        "The algorithm uses little memory",
+        "The algorithm is easy to code"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stability means errors do not amplify through the algorithm."
+    },
+    {
+      "question": "Which metric measures how close the computed solution is to the true value?",
+      "options": [
+        "Accuracy",
+        "Efficiency",
+        "Stability",
+        "Complexity"
+      ],
+      "correctIndex": 0,
+      "explanation": "Accuracy is about closeness to the true value."
+    },
+    {
+      "question": "What is the goal of efficiency in numerical methods?",
+      "options": [
+        "Best result with the least resources",
+        "Maximum memory usage",
+        "Most complicated code",
+        "Slowest computation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Efficiency aims for the best result with minimal resources."
+    },
+    {
+      "question": "What does O(n^2) represent?",
+      "options": [
+        "Computational complexity",
+        "A type of error",
+        "A programming language",
+        "A memory address"
+      ],
+      "correctIndex": 0,
+      "explanation": "O(n^2) is a notation for computational complexity."
+    },
+    {
+      "question": "Why is performance analysis important?",
+      "options": [
+        "It helps select the most appropriate algorithm",
+        "It makes the code colorful",
+        "It increases the number of variables",
+        "It changes the programming language"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance analysis guides algorithm selection."
+    },
+    {
+      "question": "Which of the following is NOT a key metric in performance analysis?",
+      "options": [
+        "The color of the output",
+        "Computational complexity",
+        "Memory usage",
+        "Stability"
+      ],
+      "correctIndex": 0,
+      "explanation": "Output color is not a performance metric."
+    }
+  ]
+}

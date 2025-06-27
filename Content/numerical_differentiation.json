@@ -1,0 +1,22 @@
+{
+  "module": "Numerical Differentiation",
+  "simulationTitle": "Derivative Approximation",
+  "parameters": [
+    {
+      "name": "Method",
+      "type": "segmented",
+      "options": ["Forward", "Backward", "Central"],
+      "default": "Forward",
+      "description": "Finite difference method."
+    },
+    {
+      "name": "Step Size (h)",
+      "type": "slider",
+      "min": 0.001,
+      "max": 1.0,
+      "default": 0.1,
+      "description": "Distance between points for derivative."
+    }
+  ],
+  "output": "Graph comparing true and approximated derivatives"
+}

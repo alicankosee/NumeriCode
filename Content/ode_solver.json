@@ -1,0 +1,22 @@
+{
+  "module": "ODE Solver",
+  "simulationTitle": "ODE Solution Visualization",
+  "parameters": [
+    {
+      "name": "Step Size (h)",
+      "type": "slider",
+      "min": 0.01,
+      "max": 1.0,
+      "default": 0.1,
+      "description": "Numerical integration step size."
+    },
+    {
+      "name": "Method",
+      "type": "segmented",
+      "options": ["Euler", "RK4"],
+      "default": "RK4",
+      "description": "Numerical method to use."
+    }
+  ],
+  "output": "Graph of numerical solution over time"
+}

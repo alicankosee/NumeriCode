@@ -1,0 +1,105 @@
+{
+  "lesson": {
+    "title": "Numerical Differentiation",
+    "paragraphs": [
+      "Numerical differentiation is the process of estimating the derivative of a function using discrete data points.",
+      "The most common methods are finite difference formulas, such as forward, backward, and central differences.",
+      "Numerical differentiation is useful when the analytical form of the derivative is difficult or impossible to obtain.",
+      "The accuracy of numerical differentiation depends on the step size and the method used.",
+      "Truncation and round-off errors can affect the results, especially for small step sizes.",
+      "Central difference formulas are generally more accurate than forward or backward differences.",
+      "Numerical differentiation is widely used in engineering, physics, and data analysis."
+    ],
+    "formula": "f'(x) \\approx \\frac{f(x+h) - f(x)}{h}"
+  },
+  "quiz": [
+    {
+      "question": "What is numerical differentiation?",
+      "options": [
+        "Estimating the derivative using discrete data points",
+        "Integrating a function numerically",
+        "Solving linear equations",
+        "Finding the maximum of a function"
+      ],
+      "correctIndex": 0,
+      "explanation": "Numerical differentiation estimates derivatives from data points."
+    },
+    {
+      "question": "Which formula is a forward difference approximation?",
+      "options": [
+        "f'(x) ≈ [f(x+h) - f(x)] / h",
+        "f'(x) ≈ [f(x) - f(x-h)] / h",
+        "f'(x) ≈ [f(x+h) - f(x-h)] / (2h)",
+        "f'(x) ≈ [f(x+2h) - f(x)] / (2h)"
+      ],
+      "correctIndex": 0,
+      "explanation": "The forward difference uses f(x+h) and f(x)."
+    },
+    {
+      "question": "What is the main source of error in numerical differentiation?",
+      "options": [
+        "Truncation and round-off errors",
+        "Measurement error",
+        "Algorithm instability",
+        "Lack of data"
+      ],
+      "correctIndex": 0,
+      "explanation": "Truncation and round-off errors are the main sources."
+    },
+    {
+      "question": "Which method is generally more accurate?",
+      "options": [
+        "Central difference",
+        "Forward difference",
+        "Backward difference",
+        "All are equally accurate"
+      ],
+      "correctIndex": 0,
+      "explanation": "Central difference is usually more accurate."
+    },
+    {
+      "question": "What happens if the step size h is too small?",
+      "options": [
+        "Round-off error increases",
+        "Accuracy always increases",
+        "No effect",
+        "Derivative becomes exact"
+      ],
+      "correctIndex": 0,
+      "explanation": "Very small h increases round-off error."
+    },
+    {
+      "question": "Numerical differentiation is useful when:",
+      "options": [
+        "The analytical derivative is hard to obtain",
+        "The function is linear",
+        "The function is constant",
+        "The function is periodic"
+      ],
+      "correctIndex": 0,
+      "explanation": "It is used when the analytical derivative is difficult or impossible."
+    },
+    {
+      "question": "Which of the following is a central difference formula?",
+      "options": [
+        "f'(x) ≈ [f(x+h) - f(x-h)] / (2h)",
+        "f'(x) ≈ [f(x+h) - f(x)] / h",
+        "f'(x) ≈ [f(x) - f(x-h)] / h",
+        "f'(x) ≈ [f(x+2h) - f(x)] / (2h)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Central difference uses points on both sides of x."
+    },
+    {
+      "question": "Numerical differentiation is widely used in:",
+      "options": [
+        "Engineering and physics",
+        "Cooking",
+        "Music",
+        "Painting"
+      ],
+      "correctIndex": 0,
+      "explanation": "It is used in engineering, physics, and data analysis."
+    }
+  ]
+}

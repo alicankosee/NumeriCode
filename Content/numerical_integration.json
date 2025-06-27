@@ -1,0 +1,22 @@
+{
+  "module": "Numerical Integration",
+  "simulationTitle": "Numerical Integration Methods",
+  "parameters": [
+    {
+      "name": "Method",
+      "type": "segmented",
+      "options": ["Trapezoidal", "Simpson's", "Midpoint"],
+      "default": "Trapezoidal",
+      "description": "Integration method."
+    },
+    {
+      "name": "Intervals",
+      "type": "stepper",
+      "min": 2,
+      "max": 50,
+      "default": 10,
+      "description": "Number of subintervals."
+    }
+  ],
+  "output": "Graph showing area under curve and approximation error"
+}

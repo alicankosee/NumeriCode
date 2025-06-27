@@ -1,0 +1,106 @@
+{
+  "lesson": {
+    "title": "Numerical Integration",
+    "paragraphs": [
+      "Numerical integration is the process of approximating the definite integral of a function using discrete data points.",
+      "Common methods include the Trapezoidal Rule, Simpson's Rule, and Midpoint Rule.",
+      "Numerical integration is useful when the analytical form of the integral is difficult or impossible to obtain.",
+      "The accuracy of numerical integration depends on the method used and the number of subintervals.",
+      "The Trapezoidal Rule approximates the area under the curve as a series of trapezoids.",
+      "Simpson's Rule uses parabolic arcs to approximate the area, providing higher accuracy for smooth functions.",
+      "Errors in numerical integration can arise from truncation and round-off, especially with coarse subdivisions.",
+      "Numerical integration is widely used in engineering, physics, and applied mathematics."
+    ],
+    "formula": "∫_a^b f(x) dx ≈ (h/2) [f(x_0) + 2Σf(x_i) + f(x_n)]"
+  },
+  "quiz": [
+    {
+      "question": "What is numerical integration?",
+      "options": [
+        "Approximating the definite integral using discrete data points",
+        "Finding the derivative of a function",
+        "Solving linear equations",
+        "Maximizing a function"
+      ],
+      "correctIndex": 0,
+      "explanation": "Numerical integration estimates the value of definite integrals."
+    },
+    {
+      "question": "Which method approximates the area under a curve using trapezoids?",
+      "options": [
+        "Trapezoidal Rule",
+        "Simpson's Rule",
+        "Midpoint Rule",
+        "Euler's Method"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Trapezoidal Rule uses trapezoids for approximation."
+    },
+    {
+      "question": "Simpson's Rule is more accurate than the Trapezoidal Rule for:",
+      "options": [
+        "Smooth functions",
+        "Discontinuous functions",
+        "Random data",
+        "Linear functions only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Simpson's Rule is especially accurate for smooth, well-behaved functions."
+    },
+    {
+      "question": "What is the main source of error in numerical integration?",
+      "options": [
+        "Truncation and round-off errors",
+        "Measurement error",
+        "Algorithm instability",
+        "Lack of data"
+      ],
+      "correctIndex": 0,
+      "explanation": "Truncation and round-off errors are the main sources."
+    },
+    {
+      "question": "Numerical integration is useful when:",
+      "options": [
+        "The analytical integral is hard to obtain",
+        "The function is linear",
+        "The function is constant",
+        "The function is periodic"
+      ],
+      "correctIndex": 0,
+      "explanation": "It is used when the analytical integral is difficult or impossible."
+    },
+    {
+      "question": "Which of the following is the Trapezoidal Rule formula?",
+      "options": [
+        "(h/2) [f(x_0) + 2Σf(x_i) + f(x_n)]",
+        "[f(x+h) - f(x)] / h",
+        "[f(x+h) - f(x-h)] / (2h)",
+        "h [f(x_0) + f(x_n)]"
+      ],
+      "correctIndex": 0,
+      "explanation": "This is the standard Trapezoidal Rule formula."
+    },
+    {
+      "question": "Increasing the number of subintervals in numerical integration generally:",
+      "options": [
+        "Increases accuracy",
+        "Decreases accuracy",
+        "Has no effect",
+        "Makes the result exact"
+      ],
+      "correctIndex": 0,
+      "explanation": "More subintervals usually mean higher accuracy."
+    },
+    {
+      "question": "Numerical integration is widely used in:",
+      "options": [
+        "Engineering and physics",
+        "Cooking",
+        "Music",
+        "Painting"
+      ],
+      "correctIndex": 0,
+      "explanation": "It is used in engineering, physics, and applied mathematics."
+    }
+  ]
+}

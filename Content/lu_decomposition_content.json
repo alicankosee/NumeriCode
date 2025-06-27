@@ -1,0 +1,106 @@
+{
+  "lesson": {
+    "title": "LU Decomposition",
+    "paragraphs": [
+      "LU decomposition is a matrix factorization technique that expresses a matrix as the product of a lower triangular matrix (L) and an upper triangular matrix (U).",
+      "It is widely used to solve linear systems, invert matrices, and compute determinants efficiently.",
+      "The process involves decomposing a square matrix A into A = LU, where L has ones on the diagonal and U is upper triangular.",
+      "LU decomposition simplifies solving Ax = b by first solving Ly = b (forward substitution) and then Ux = y (back substitution).",
+      "Not all matrices have an LU decomposition without row exchanges; partial pivoting may be required.",
+      "LU decomposition is more efficient than Gaussian elimination when solving multiple systems with the same coefficient matrix.",
+      "The method is fundamental in numerical linear algebra and is implemented in many scientific computing libraries.",
+      "LU decomposition can be extended to include permutation matrices for stability (PA = LU)."
+    ],
+    "formula": "A = LU"
+  },
+  "quiz": [
+    {
+      "question": "What does LU decomposition do?",
+      "options": [
+        "Expresses a matrix as the product of a lower and an upper triangular matrix",
+        "Finds the eigenvalues of a matrix",
+        "Calculates the inverse directly",
+        "Solves nonlinear equations"
+      ],
+      "correctIndex": 0,
+      "explanation": "LU decomposition factors a matrix into L (lower) and U (upper) matrices."
+    },
+    {
+      "question": "What is the main advantage of LU decomposition?",
+      "options": [
+        "Efficiently solves multiple systems with the same coefficient matrix",
+        "It is the fastest for all systems",
+        "It works only for 2x2 matrices",
+        "It does not require matrix inversion"
+      ],
+      "correctIndex": 0,
+      "explanation": "LU decomposition is efficient for solving multiple systems with the same matrix."
+    },
+    {
+      "question": "What is the form of the matrix L in LU decomposition?",
+      "options": [
+        "Lower triangular with ones on the diagonal",
+        "Upper triangular",
+        "Diagonal",
+        "Symmetric"
+      ],
+      "correctIndex": 0,
+      "explanation": "L is lower triangular with ones on the diagonal."
+    },
+    {
+      "question": "What is the first step in solving Ax = b using LU decomposition?",
+      "options": [
+        "Solve Ly = b using forward substitution",
+        "Solve Ux = y using back substitution",
+        "Invert matrix A",
+        "Find the determinant"
+      ],
+      "correctIndex": 0,
+      "explanation": "First, solve Ly = b for y."
+    },
+    {
+      "question": "What is required for LU decomposition without row exchanges?",
+      "options": [
+        "The matrix must be non-singular and have no zero pivots",
+        "The matrix must be diagonal",
+        "The matrix must be symmetric",
+        "The matrix must be sparse"
+      ],
+      "correctIndex": 0,
+      "explanation": "Non-singular matrices with no zero pivots can be decomposed without row exchanges."
+    },
+    {
+      "question": "What is partial pivoting in LU decomposition?",
+      "options": [
+        "Row exchanges to improve numerical stability",
+        "Column exchanges",
+        "Scaling the matrix",
+        "No changes to the matrix"
+      ],
+      "correctIndex": 0,
+      "explanation": "Partial pivoting involves row exchanges for stability."
+    },
+    {
+      "question": "What is the formula for LU decomposition with a permutation matrix?",
+      "options": [
+        "PA = LU",
+        "A = LU",
+        "A = PLU",
+        "AP = LU"
+      ],
+      "correctIndex": 0,
+      "explanation": "PA = LU includes a permutation matrix for row exchanges."
+    },
+    {
+      "question": "LU decomposition is fundamental in which field?",
+      "options": [
+        "Numerical linear algebra",
+        "Statistics",
+        "Number theory",
+        "Topology"
+      ],
+      "correctIndex": 0,
+      "explanation": "LU decomposition is a key technique in numerical linear algebra."
+    }
+  ]
+}

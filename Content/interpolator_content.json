@@ -1,0 +1,126 @@
+{
+  "lesson": {
+    "title": "Interpolation Techniques: Linear and Cubic Spline",
+    "paragraphs": [
+      "Interpolation is a method of estimating values between two known data points. It is commonly used to construct new data points within the range of a discrete set of known data points.",
+      "Linear interpolation connects two adjacent data points with a straight line and estimates intermediate values along that line. It is simple and efficient but may not capture curvature in the data.",
+      "Cubic spline interpolation uses piecewise cubic polynomials to produce a smooth curve that passes through all given data points. It maintains continuity of the function and its first and second derivatives.",
+      "Spline interpolation is especially useful when a smooth curve is needed, such as in computer graphics, animation, and data fitting in scientific computation.",
+      "Boundary conditions such as natural spline (second derivative = 0 at endpoints) or clamped spline (specified first derivative at endpoints) influence the shape of the cubic spline.",
+      "Compared to polynomial interpolation, which can suffer from oscillations (Runge\u2019s phenomenon), spline interpolation is more stable and accurate for large datasets."
+    ],
+    "formula": "S(x) = a_i + b_i(x - x_i) + c_i(x - x_i)^2 + d_i(x - x_i)^3"
+  },
+  "quiz": [
+    {
+      "question": "What is the purpose of interpolation?",
+      "options": [
+        "To estimate values outside the range",
+        "To compress data",
+        "To estimate values between known points",
+        "To solve differential equations"
+      ],
+      "correctIndex": 2,
+      "explanation": "Interpolation estimates values within the range of known data points."
+    },
+    {
+      "question": "What type of function does linear interpolation use?",
+      "options": [
+        "Quadratic",
+        "Cubic",
+        "Exponential",
+        "Linear"
+      ],
+      "correctIndex": 3,
+      "explanation": "Linear interpolation uses straight lines between data points."
+    },
+    {
+      "question": "Which interpolation method uses piecewise cubic polynomials?",
+      "options": [
+        "Linear interpolation",
+        "Lagrange interpolation",
+        "Cubic spline interpolation",
+        "Trapezoidal method"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cubic spline interpolation fits cubic polynomials between each pair of points."
+    },
+    {
+      "question": "What is a key advantage of cubic spline interpolation over polynomial interpolation?",
+      "options": [
+        "Requires fewer points",
+        "Avoids Runge\u2019s phenomenon",
+        "Simpler calculations",
+        "Works only with even data points"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cubic splines avoid the large oscillations seen in high-degree polynomial interpolation."
+    },
+    {
+      "question": "In cubic spline interpolation, which of the following is typically continuous across intervals?",
+      "options": [
+        "First and second derivatives",
+        "Only the function value",
+        "Only the slope",
+        "Nothing is continuous"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cubic spline interpolation ensures continuity of the function and its first and second derivatives."
+    },
+    {
+      "question": "What is a 'natural spline'?",
+      "options": [
+        "A spline with random data",
+        "A spline with zero second derivatives at endpoints",
+        "A spline with maximum curvature",
+        "A spline that avoids interpolation"
+      ],
+      "correctIndex": 1,
+      "explanation": "Natural spline assumes second derivative = 0 at the endpoints."
+    },
+    {
+      "question": "Which application commonly uses spline interpolation?",
+      "options": [
+        "Memory management",
+        "Computer graphics and animation",
+        "Sorting algorithms",
+        "Cryptography"
+      ],
+      "correctIndex": 1,
+      "explanation": "Spline interpolation is widely used in graphics and smooth motion animation."
+    },
+    {
+      "question": "What is a disadvantage of linear interpolation?",
+      "options": [
+        "It is slow",
+        "It requires derivatives",
+        "It cannot handle large datasets",
+        "It may not capture curvature"
+      ],
+      "correctIndex": 3,
+      "explanation": "Linear interpolation creates straight lines and may miss important curvature in data."
+    },
+    {
+      "question": "What kind of polynomials are used in spline interpolation?",
+      "options": [
+        "Single global polynomial",
+        "Piecewise cubic polynomials",
+        "Linear equations",
+        "Differential polynomials"
+      ],
+      "correctIndex": 1,
+      "explanation": "Spline interpolation uses a different cubic polynomial for each interval between points."
+    },
+    {
+      "question": "Which condition makes a spline 'clamped'?",
+      "options": [
+        "Specified second derivatives at ends",
+        "Using only three points",
+        "Specified first derivatives at ends",
+        "Equal spacing between points"
+      ],
+      "correctIndex": 2,
+      "explanation": "Clamped spline specifies the first derivative (slope) at the endpoints."
+    }
+  ]
+}

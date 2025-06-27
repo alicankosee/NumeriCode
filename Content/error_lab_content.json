@@ -1,0 +1,126 @@
+{
+  "lesson": {
+    "title": "Error Analysis and Floating-Point Precision",
+    "paragraphs": [
+      "In numerical computation, errors are differences between the true value and the computed value. Understanding and managing errors is crucial for building reliable numerical algorithms.",
+      "There are mainly two types of errors: truncation errors and round-off errors. Truncation error arises when an infinite process is approximated by a finite one, such as using a limited number of terms in a Taylor series. Round-off error occurs because computers cannot represent all real numbers exactly due to their finite precision.",
+      "Floating-point representation allows computers to approximate real numbers. However, due to the fixed number of bits, not all real numbers can be exactly represented. This leads to rounding errors, especially during arithmetic operations like addition, subtraction, multiplication, and division.",
+      "The relative error is a commonly used measure defined as: \u03b5 = |true value - approximate value| / |true value|. It indicates how significant the error is relative to the true value.",
+      "Error propagation occurs when small initial errors grow throughout calculations, especially in iterative methods. Stability and conditioning of algorithms play a critical role in controlling error propagation.",
+      "In practice, choosing the right level of floating-point precision (e.g., float vs. double) and using numerically stable algorithms can help reduce error impact."
+    ],
+    "formula": "\u03b5 = |true value - approximate value| / |true value|"
+  },
+  "quiz": [
+    {
+      "question": "What is truncation error?",
+      "options": [
+        "Error due to incorrect syntax",
+        "Error due to incomplete mathematical process",
+        "Error from rounding numbers",
+        "Error from memory overflow"
+      ],
+      "correctIndex": 1,
+      "explanation": "Truncation error arises when an infinite process is approximated by a finite one."
+    },
+    {
+      "question": "What causes round-off error in numerical computations?",
+      "options": [
+        "Incorrect variable names",
+        "Insufficient memory",
+        "Finite precision of floating-point representation",
+        "Compiler bugs"
+      ],
+      "correctIndex": 2,
+      "explanation": "Round-off error occurs because computers use a limited number of bits to represent real numbers."
+    },
+    {
+      "question": "Which of the following best defines relative error?",
+      "options": [
+        "Difference between true and false values",
+        "|true value - approximate value| / |true value|",
+        "|approximate value - measured value|",
+        "approximate value / true value"
+      ],
+      "correctIndex": 1,
+      "explanation": "Relative error measures how significant the difference is compared to the true value."
+    },
+    {
+      "question": "Which operation is most likely to suffer from floating-point cancellation?",
+      "options": [
+        "Addition of large numbers",
+        "Multiplication of small numbers",
+        "Subtraction of nearly equal numbers",
+        "Division by zero"
+      ],
+      "correctIndex": 2,
+      "explanation": "Subtracting nearly equal numbers can lead to loss of significant digits \u2014 a phenomenon called cancellation."
+    },
+    {
+      "question": "How does error propagate in iterative numerical methods?",
+      "options": [
+        "It decreases with more iterations",
+        "It stays constant",
+        "It may amplify unless methods are stable",
+        "It gets ignored"
+      ],
+      "correctIndex": 2,
+      "explanation": "In unstable methods, small initial errors can grow exponentially with iterations."
+    },
+    {
+      "question": "Which floating-point format typically has higher precision?",
+      "options": [
+        "Float (32-bit)",
+        "Double (64-bit)",
+        "Integer",
+        "Binary"
+      ],
+      "correctIndex": 1,
+      "explanation": "Double uses more bits than float, offering greater precision."
+    },
+    {
+      "question": "Which of the following is NOT a type of numerical error?",
+      "options": [
+        "Truncation error",
+        "Round-off error",
+        "Representation error",
+        "Syntax error"
+      ],
+      "correctIndex": 3,
+      "explanation": "Syntax errors are programming errors, not numerical computation errors."
+    },
+    {
+      "question": "Why is understanding error analysis important in numerical methods?",
+      "options": [
+        "To increase memory usage",
+        "To introduce bugs deliberately",
+        "To ensure accuracy and reliability of results",
+        "To reduce code readability"
+      ],
+      "correctIndex": 2,
+      "explanation": "Error analysis helps in understanding and managing inaccuracies in numerical computation."
+    },
+    {
+      "question": "What does a condition number indicate?",
+      "options": [
+        "The size of memory used",
+        "The complexity of code",
+        "The sensitivity of a function to input changes",
+        "The size of the floating point"
+      ],
+      "correctIndex": 2,
+      "explanation": "A high condition number means the function output is highly sensitive to small input changes."
+    },
+    {
+      "question": "What is the best practice to reduce round-off errors?",
+      "options": [
+        "Use unstable algorithms",
+        "Use float instead of double",
+        "Avoid arithmetic operations",
+        "Use numerically stable methods and appropriate precision"
+      ],
+      "correctIndex": 3,
+      "explanation": "Stable algorithms and using double precision when necessary reduce round-off error."
+    }
+  ]
+}
